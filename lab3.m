@@ -34,7 +34,7 @@ end
 figure
 subplot(2,1,1)
 plot(x,y,'g')
-y1=sqrt((1+abs(x))./(2+abs(x))).*(x<=0);
+y1=(sqrt((1+abs(x))/(2+abs(x)))).*(x<=0);
 y2=((1+x)/(2+cos(x).^3)).*(x>0);
 subplot(2,1,2)
 plot(x,y1 + y2)
